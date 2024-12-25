@@ -2,4 +2,3 @@ streamlit
 openai-whisper
 SpeechRecognition
 scipy
-imageio[ffmpeg]
