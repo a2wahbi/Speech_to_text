@@ -10,7 +10,7 @@ st.write("Utilisez votre micro pour enregistrer votre voix et obtenir une transc
 # Charger le modèle Whisper avec mise en cache
 @st.cache_resource
 def load_model():
-    return whisper.load_model("small")  # Modèles possibles : tiny, base, small, medium, large
+    return whisper.load_model("small").cpu  # Modèles possibles : tiny, base, small, medium, large
 
 model = load_model()
 
